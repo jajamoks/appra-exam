@@ -1,0 +1,15 @@
+export const VERIFICATION_CONFIG = {
+  CODE_LENGTH: 6,
+  CODE_EXPIRY_MINUTES: 5,
+  JWT_EXPIRY_MINUTES: 0.5,
+  RATE_LIMITS: {
+    CODE_REQUEST: {
+      MAX_ATTEMPTS: 3,
+      WINDOW_MINUTES: 0.5,
+    },
+    CODE_VERIFY: {
+      MAX_ATTEMPTS: 3,
+      WINDOW_MINUTES: 0.5,
+    },
+  },
+} as const;
